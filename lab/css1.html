@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS selector</title>
+    <style>
+        div{
+            color: yellow;
+            background-color: red;
+        }
+        .red{
+            color: blue;
+            background-color: pink;
+        }
+        #green , div>p ,.red p
+        {
+            color: aqua;
+            background-color: blue;
+        }
+        /* universeal selcetor */
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        /* pseudo selector */
+        a:visited{
+            color: yellow;
+        }
+        a:link{
+            color: green;
+        }
+        a:active{
+            background-color: red;
+        }
+        a:hover{
+            background-color: brown;
+        }
+    </style>
+</head>
+<body>
+    <div><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio similique doloremque eaque.</p>I am div</div>
+    <div class="red"> <article>IT 27 <p>Null</p></article>I am mukti</div>
+    <a href="https://www.facebook1.com">Facebook</a>
+    <div id="green">DDU IT</div>
+    <a href="https://www.google.com">Go to Google</a>
+</body>
+</html>

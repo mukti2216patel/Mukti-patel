@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex with grid</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .main {
+            background-color: rgb(255, 255, 255);
+            margin: 23px;
+            height: 45px;
+            text-align: center;
+            display: flex;
+            justify-content: space-around;
+            flex-direction: row;
+            align-items: center;
+
+
+        }
+
+        .box1 {
+            margin: 11px 0px 11px 180px;
+            float: right;
+        }
+
+        ul {
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            list-style-type: none;
+        }
+
+        .box3 {
+
+            padding: 7px 8px;
+            font-size: larger;
+            font-family: 'Popins';
+            font-weight: bold;
+            background-color: black;
+            color: yellow;
+            width: 30px;
+            height: 30px;
+        }
+
+        .box2 {
+            font-size: x-large;
+            font-weight: 800;
+        }
+
+        .box {
+            display: flex;
+        }
+
+        .ab {
+            text-align: center;
+            align-items: center;
+            justify-items: center;
+            margin: 23px;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+        }
+
+        .a {
+            font-weight: 200;
+            font-size: xx-large;
+            font-family: 'Popins';
+            margin: 23px;
+        }
+
+        .b {
+            width: 42vw;
+            font-size: large;
+            font-weight: 300;
+            text-align: center;
+            margin: 23px;
+        }
+
+        .ab nav {
+            padding: 15px 2px 2px 2px;
+            margin: 0px 29px 29px 29px;
+            border-radius: 10px;
+            border: 2px solid lightgrey;
+            font-size: larger;
+            color: white;
+            background: #0e5effde;
+            height: 40px;
+            width: 358px;
+            align-self: center;
+            font-weight: bold;
+        }
+
+        .bd {
+
+            display: grid;
+            grid-template-columns: 350px 350px 350px;
+            justify-content: center;
+        }
+
+        .bd1 {
+
+            background-color: #d3d3d321;
+            margin: 22px;
+            height: 180px;
+            padding: 38px 38px 0px 38px;
+            text-align: center;
+            margin: 26px 12px 44px 12px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .bd2 {
+
+            font-size: larger;
+            font-weight: 700;
+            font-family: 'Popins';
+
+        }
+
+        .bd3 {
+            font-size: small;
+            margin: 19px
+        }
+
+        .bd4 {
+            background-color: #00b2ff;
+            color: white;
+            border: 2px solid white;
+            padding: 6px;
+            border-radius: 5px;
+        }
+
+
+        .bd5 {
+
+            background: #04cf04;
+            color: white;
+            border: 2px solid white;
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+        .bd6 {
+            display: flex;
+            flex-direction: row;
+            margin: 32px 0px 0px 0px;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .bd31 {
+            color: white;
+            margin: 19px;
+            height: 15px;
+        }
+
+        .first {
+            display: flex;
+            align-items: flex-end;
+            flex-wrap: nowrap;
+            justify-content: normal;
+            width: 308px;
+            margin: 0px 190px;
+        }
+
+        .first img {
+            width: 8vw;
+        }
+
+        @media screen and (max-width:1145px) {
+            .bd {
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <nav>
+            <div class="box">
+                <div class="box3">UE</div>
+                <div class="main1">
+                    <div class="box2">ULTRAEDIT </div>
+                    <div class="box4">An inc company</div>
+                </div>
+            </div>
+
+        </nav>
+        <div class="box1">
+            <ul>
+                <li>Products</li>
+                <li>Pricing</li>
+                <li>Resources</li>
+                <li>About us</li>
+            </ul>
+        </div>
+    </div>
+    <div class="ab">
+        <div class="a">Download for <b>ULTRAEDIT</b> for windows</div>
+        <div class="b">Download and try ultraedit before you buy it this download includes the full windows version of
+            the text editor</div>
+        <nav>DOWNLOAD MAC FOR VERSION <a href="https://www.ultraedit.com/downloads/uex-thank-you/"></a></nav>
+    </div>
+    <div class="first">
+        <img src="https://www.ultraedit.com/wp-content/uploads/2023/01/Dark-logo.png" alt="">
+        <span class="f.f">v2023.1(released 1.0) | hotflix</span>
+    </div>
+    <div class="bd">
+        <div class="bd1">
+            <div class="bd2">English</div>
+            <div class="bd31"></div>
+            <div class="bd6">
+                <button class="bd4">Download 32-bit</button>
+                <button class="bd5">Download 64-bit</button>
+            </div>
+        </div>
+        <div class="bd1">
+            <div class="bd2">Deutsch</div>
+            <div class="bd3">German</div>
+            <div class="bd6">
+                <button class="bd4">Download 32-bit</button>
+                <button class="bd5">Download 64-bit</button>
+            </div>
+        </div>
+        <div class="bd1">
+            <div class="bd2">Italino</div>
+            <div class="bd3">Italian</div>
+            <div class="bd6">
+                <button class="bd4">Download 32-bit</button>
+                <button class="bd5">Download 64-bit</button>
+            </div>
+        </div>
+        <div class="bd1">
+            <div class="bd2">Espanol</div>
+            <div class="bd3">Spanish</div>
+            <div class="bd6">
+                <button class="bd4">Download 32-bit</button>
+                <button class="bd5">Download 64-bit</button>
+            </div>
+        </div>
+        <div class="bd1">
+            <div class="bd2">francais</div>
+            <div class="bd3">French</div>
+            <div class="bd6">
+                <button class="bd4">Download 32-bit</button>
+                <button class="bd5">Download 64-bit</button>
+            </div>
+        </div>
+        <div class="bd1">
+            <div class="bd2">Portogues brasilerio</div>
+            <div class="bd3">Brazilian portuguese</div>
+            <div class="bd6">
+                <button class="bd4">Download 32-bit</button>
+                <button class="bd5">Download 64-bit</button>
+            </div>
+        </div>
+        <div class="bd1">
+            <div class="bd2">Japan</div>
+            <div class="bd3">Japanes</div>
+            <div class="bd6">
+                <button class="bd4">Download 32-bit</button>
+                <button class="bd5">Download 64-bit</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+.r2{
+  text-align: center;
+}
+#event{
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    
+}
+
+.card{
+  height: 550px;
+    width: 400px;
+    /* padding: 20px; */
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+}
+.card>img{
+  width:100%;
+}
+.card>div{
+  text-align: center;
+  font-size: larger;
+  font-weight: 300;
+  width:100%;
+}
+.card1>h5{
+  font-size: larger;
+  font-weight: 600;
+}

@@ -1,0 +1,28 @@
+/* body{
+    background-color: black;
+    color: white;
+} */
+*{
+    margin: 0;
+    padding: 0;
+}
+.home ul li{
+    padding-top: 14px;
+    width: 15px;
+    list-style-type: none;
+    display: flex;
+    gap: 15px;
+}
+.left{
+    width:25vw;
+    padding: 10px;
+
+}
+.right{
+    width: 75vw;
+}
+.m-1{
+    margin: 5px;
+}
+.home{
+}

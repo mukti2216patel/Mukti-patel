@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital clock</title>
+    <style>
+        #clock{
+            width:200px;
+            padding: 20px;
+            height: auto;
+            background-color: orange;
+            border-radius: 20px;
+            color: white;
+            font-size: 38px;
+            text-align: center;
+            font-family: 'Popins';
+        }
+        .center{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width:600px;
+            height:300px;
+            border: 2px solid white;
+            box-sizing: border-box;
+        }
+        body{
+            height:100vw;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(0, 0, 0, 0.816);
+        }
+    </style>
+</head>
+<body>
+    <div class="center">
+        <div id="banner"></div>
+        <h1>Digital clock</h1>
+        <div id="clock"></div>       
+    </div>
+    <script src="script2.js"></script>
+</body>
+</html>

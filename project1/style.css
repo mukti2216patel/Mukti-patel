@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: black;
+}
+main{
+    width:100vw;
+    height:7vh;
+    display: flex;
+    flex-direction: raw;
+    
+}
+.logo{
+    padding: 0px 34px;
+    gap: 2px;
+    align-items: center;
+    display: flex;
+    justify-content: flex-start;
+}
+.input{
+    padding: 0px 12px;
+    z-index: 11;
+    color: lightgray;
+    width: 30vw;
+    height: 4vh;
+    border-radius: 30px;
+}
+.center
+{
+    display: flex;
+    width: 79vw;
+    height: 7vh;
+     padding: 0px 23px; 
+    justify-content: center;
+    align-items: center;
+}
+.center > input{
+    color: black;
+    opacity: 0.45;
+   
+}
+.end{
+    padding: 0px 34px;
+    align-items: center;
+    justify-content: center;
+    height: 7vh;
+    display: flex;
+}
+.signin{
+    justify-content: center;
+    align-items: center;
+    border: 1px solid grey;
+    border-radius: 30px;
+    display: flex;
+    
+}
+
+.signin > span{
+    height: 5vh;
+    text-align: center;
+    width: 5vw;
+    color:#008eff;
+}
+.side{
+    padding: 25px 0px 0px 0px;
+    display: flex;
+    flex-direction: column;
+   justify-content: space-around;
+   
+    width: 17vw;
+    height: 100vh;
+    
+}
+.first{
+    display: flex;
+    gap: 2vw; 
+    align-items: center;
+    text-align: center;
+}
+.first > div{
+    margin: 0px 0px 0px 17px;
+    height: 4vh;
+}
+.class{
+    font-size: 3vh;
+    font-family: 'Popins';
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 3vh;
+    color: white;
+}
+.sepration{
+    width: 17vw;
+    height: 0.5px;
+    background-color:rgb(141, 139, 139);
+    border: 10px;
+    
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 17vw;
+    justify-content: center;
+    align-items: center;
+}
+.text > span{
+    color: white;
+    text-align: center;
+    margin: auto;
+}

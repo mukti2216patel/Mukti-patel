@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multicolour website</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+
+        }
+        :root{
+            --background-color: rgb(253, 209, 253);
+            --color:rgb(179, 2, 179);
+            --textcolor:white;
+
+        }
+        body{
+            background-color: var(--background-color);
+        }
+        .boxes{
+            background-color: var(--color);
+            
+        }
+        .box{
+            color: var(--textcolor);
+            font-family: 'Popins';
+            font-size: small;
+            display: inline;
+            padding:0px 21px; 
+            font-weight: thin;
+            
+        }
+    </style>
+</head>
+<body>
+        <nav class="main">
+            <ul class="boxes">
+                <li class="box">Home</li>
+                <li class="box">About</li>
+                <li class="box">Contacts</li>
+            </ul>
+        </nav>
+</body>
+</html>

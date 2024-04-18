@@ -1,0 +1,17 @@
+body{
+    background-color: yellowgreen;
+    color: white;
+}
+td{
+    border:2px solid black;
+}
+a{
+    background-color: red;
+}
+p{
+    background-color: coral;
+}
+div
+{
+    background-color: blue;
+}

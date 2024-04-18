@@ -1,0 +1,694 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Oswald:wght@200..700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family:'Poppins', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+
+}
+
+.nevbar {
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  z-index: 5;
+  display: flex;
+  background-color: transparent;
+}
+
+.logo a {
+  text-decoration: none;
+  color: white;
+  transition: .3s;
+}
+
+.logo a h1 {
+  margin: 15px 100px;
+  font-size: 35px;
+}
+
+.logo a h1 span {
+  padding-right: 4px;
+  color: green;
+  font-size: 35px;
+}
+
+.menu {
+  flex: 1;
+  text-align: right;
+  margin-top: 28px;
+  margin-right: 100px;
+}
+
+.menu ul li {
+  list-style: none;
+  display: inline-block;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: white;
+  margin-left: 30px;
+  font-size: 15px;
+  transition: 0.5s;
+  font-weight: 500;
+  position: relative;
+
+}
+
+.menu ul li a:hover {
+  color: green;
+  background-color: white;
+  border-radius: 20px;
+  padding: 10px;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.logo a h1:hover {
+  padding: 10px;
+  box-sizing: border-box;
+  background-color: white;
+  transform: rotateX(30deg);
+  color: green;
+}
+
+.menu ul li a span {
+  color:green;
+}
+
+.menuicon {
+  margin: auto;
+  color: rgba(255, 255, 255, 0.5);
+  display: none;
+}
+
+.menuicon i span {
+  font-weight: 600;
+}
+
+
+@media only screen and (max-width : 700px) {
+  .nevbar {
+    background-color: black;
+  }
+
+  .logo a h1 {
+    margin: 15px 12px;
+  }
+
+  .menu {
+    text-align: right;
+    margin-right: 0px;
+    position: absolute;
+    background-color: black;
+    width: 100%;
+    top: 49px;
+    max-height: 0px;
+    overflow: hidden;
+    box-shadow: 0px 10px 12px -1px rgb(0 0 0 / 10%);
+    transition: .5s;
+  }
+
+  .menu ul li {
+    list-style: none;
+    display: block;
+    margin: 25px 40px 35px auto;
+  }
+
+  .menu ul li a {
+    text-decoration: none;
+    color: white;
+    margin-left: 0px;
+    font-size: 15px;
+    transition: 0.5s;
+    font-size: 18px;
+  }
+
+  .menuicon {
+    display: block;
+    margin-right: 30px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+}
+
+
+.cover {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), url('/WhatsApp\ Image\ 2024-03-18\ at\ 01.18.21_a1dbfc60.jpg');
+  z-index: -200;
+  color: white;
+}
+
+.cover .information {
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-top: 10%;
+}
+
+.information h3 {
+  font-size: 18px;
+  letter-spacing: 3px;
+  padding-bottom: 10px;
+  font-weight: 300;
+}
+
+.information h3 span {
+  float: right;
+  font-size: 16px;
+  
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.information h2 {
+  font-size: 40px;
+}
+
+.information h1 span {
+  font-size: 110px;
+  line-height: 120px;
+  color: green;
+  letter-spacing: 10px;
+}
+
+.information a {
+  display: block;
+  max-width: 350px;
+  margin: 0 auto;
+}
+
+.information a button {
+  padding: 8px 80px;
+  cursor: pointer;
+  letter-spacing: 5px;
+  background: linear-gradient(to right, transparent 50%, green 50%);
+  background-size: 200%;
+  background-position: left;
+  transition: .3s;
+  border: 2px solid white;
+  color: white;
+  margin: 40px 0 -50%;
+  width: 100%;
+}
+
+.information a button:hover {
+  background-position: right;
+  color: white;
+}
+
+@media only screen and (max-width : 700px) {
+
+  .cover .information {
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-top: 30%;
+  }
+
+  .information h3 {
+    font-size: 14px;
+    letter-spacing: 3px;
+    font-weight: 300;
+  }
+
+  .information h3 span {
+    float: none;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.8);
+  }
+
+  .information h2 {
+    font-size: 30px;
+  }
+
+  .information h1 span {
+    font-size: 70px;
+    line-height: 120px;
+    color: green;
+    letter-spacing: 10px;
+  }
+
+}
+
+.fullContainer {
+  width: 100%;
+}
+
+.container {
+  width: 1140px;
+  margin: auto;
+}
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+
+.mainraw {
+  gap: 47px;
+  margin-top: 70px;
+  margin-bottom: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.row1 {
+  text-align: center;
+}
+
+.row2,
+.row4,
+.row5 {
+  width: 300px;
+  height: auto;
+}
+
+#vision h1 {
+  color: black;
+  margin: 20px;
+}
+
+#vision section {
+  width: max-content;
+  margin: auto;
+  padding: 20px;
+  border-radius: 50%;
+  background-color:green;
+  margin-bottom: 20px;
+  transition: all 1s ease;
+}
+
+#vision img {
+  transition: all 1s ease;
+}
+
+#vision div {
+  cursor: pointer;
+}
+
+#vision div:hover img {
+  transform: scale(1.10);
+}
+
+#vision div:hover section {
+  box-shadow: 5px 5px 10px 3px rgba(0, 0, 0, 0.4);
+}
+
+.about1 {
+  width: 100%;
+  display: flex;
+  background-color: #F8F9FA;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.about1 .imgcontanner {
+  width: 50%;
+  position: relative;
+}
+
+.about1 .imgcontanner .aboutimg {
+  position: absolute;
+  background: url('/Mukti-patel/javascript/video6/iStock-171278387.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 350px;
+  top: 80px;
+  left: 32%;
+}
+
+.about1 .aboutcontent {
+  width: 50%;
+  padding: 80px 10% 80px 16%;
+  color: white;
+  background-color:green;
+}
+
+.aboutcontent h5 {
+  letter-spacing: 2px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.aboutcontent h1 {
+  font-weight: 600;
+  font-size: 50px;
+  padding-bottom: 20px;
+}
+
+.aboutcontent p {
+  padding-bottom: 30px;
+}
+
+
+.aboutcontent a {
+  color: white;
+  text-decoration: none;
+  background-color: transparent;
+  padding: 8px 40px;
+  background: linear-gradient(to right, transparent 50%, rgb(1, 161, 1) 50%);
+  background-size: 200%;
+  background-position: left;
+  transition: .3s;
+  border: 2px solid white;
+  letter-spacing: 2px;
+  font-size: 14px;
+}
+
+
+
+
+.programs {
+  background-color: white;
+}
+
+.programs .boxContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 50px;
+}
+
+.programs .boxContainer .box {
+  background-color: #fff;
+  text-align: center;
+  padding-bottom: 25px;
+  border-radius: 5px;
+  box-shadow: 0 0 3px #c5c5c5;
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.programs .boxContainer .box .cardImage {
+  width: 100%;
+  height: 300px;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+  border-radius: 5px 5px 0 0;
+}
+
+.programs .boxContainer .box .cardImage:after {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  filter: grayscale(100%);
+  transition: 0.4s;
+}
+
+.programs .boxContainer .box:nth-child(2) .cardImage,
+.programs .boxContainer .box:nth-child(2) .cardImage:after {
+  background-image: url(/WhatsApp\ Image\ 2024-03-18\ at\ 01.18.21_a1dbfc60.jpg);
+}
+
+
+.programs .boxContainer .box:nth-child(3) .cardImage,
+.programs .boxContainer .box:nth-child(3) .cardImage:after {
+  background-image: url(/WhatsApp\ Image\ 2024-03-18\ at\ 01.18.21_a1dbfc60.jpg);
+}
+
+.programs .boxContainer .box:nth-child(4) .cardImage,
+.programs .boxContainer .box:nth-child(4) .cardImage:after {
+  background-image: url(/WhatsApp\ Image\ 2024-03-18\ at\ 01.18.21_a1dbfc60.jpg);
+}
+
+
+.programs .boxContainer .box:nth-child(1) .cardImage,
+.programs .boxContainer .box:nth-child(1) .cardImage:after {
+  background-image: url(/WhatsApp\ Image\ 2024-03-18\ at\ 01.18.21_a1dbfc60.jpg);
+}
+
+
+.programs .boxContainer .box:hover .cardImage:after {
+  top: 100%;
+}
+
+.programs .boxContainer .box .programTitle {
+  font-size: 16px;
+  margin-top: 15px;
+  font-weight: 600;
+  color: #444;
+}
+
+.programs .boxContainer .box .donationCount {
+  font-size: 13px;
+  font-weight: 600;
+  color: #444;
+  margin-top: 10px;
+}
+
+.programs .boxContainer .box .donationCount span {
+  color:green;
+}
+
+.programs .boxContainer .box button {
+  position: absolute;
+  left: 50%;
+  background-color: green;
+  transform: translate(-50%);
+  bottom: -15px;
+  border-radius: 60px;
+  padding: 7px 15px;
+  border: 0;
+  outline: none;
+}
+
+
+
+.news {
+  margin-top: 70px;
+}
+
+.r2 {
+  text-align: center;
+  gap: 30px;
+}
+
+.r2>h1 {
+  margin-top: 23px;
+}
+
+#evnt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-top: 40px;
+  
+  /* transform: translateY(0);
+    box-shadow: 0 0.4rem 0.5rem -0.01rem #efece0; */
+
+}
+#event::hover{
+  box-shadow: 0 0.4rem 0.5rem -0.01rem #efece0;
+}
+
+
+
+.cardS {
+  position: relative;
+  height: 520px;
+  width: 400px;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  animation-name: showCardLeft;
+    /* animation-duration: 1s;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
+    transition: all .8s;
+    -webkit-transition: all .8s;
+    opacity: 0;
+    transform: translateX(1.5rem); */
+}
+
+.cardS .s1 {
+  position: absolute;
+  top: 0px;
+  width: 60px;
+  height: 60px;
+  background-color: green;
+  font-size: 20px;
+  color: white;
+}
+
+.cardS>img {
+  width: 100%;
+}
+
+.cardS>div {
+  text-align: center;
+  font-size: larger;
+  font-weight: 300;
+  width: 100%;
+}
+
+.card1>h5 {
+  font-size: larger;
+  font-weight: 600;
+  margin-top: 30px;
+}
+
+.card1 {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+
+
+
+
+.volunteer {
+  /* position: relative; */
+  width: 100%;
+  margin-top: 50px;
+  height: 600px;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), url('/Mukti-patel/javascript/video6/MTC-portrait-of-volunteer-group-posing-L6NAHWF-1.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  color: white;
+  display: flex;
+  flex-direction:row ;
+  
+}
+
+.volunteer .u1 {
+  padding-top: 28px;
+  max-width: 950px;
+  /* position: absolute; */
+  margin-top: 87px;
+  margin-left: 50px;
+  width: auto;
+  /* width: 700px; */
+  height: 400px;
+  background-color: white;
+  padding-left: 30px;
+}
+
+.volunteer .u1 .orange {
+  font-size: 31px;
+  font-family: 'Hackensack';
+  font-weight: lighter;
+  color: green;
+
+}
+
+.volunteer .big {
+  font-family: 'Hackensack';
+  font-size: 41px;
+  font-weight: 600;
+  margin: 30px 0px;
+  color: black;
+
+}
+
+.volunteer p {
+  color: grey;
+  text-align: left;
+  font-family: 'Hackensack';
+  font-weight: lighter;
+  font-size: larger;
+  line-height: 1.5;
+}
+
+.volunteer .orbtn {
+  font-family: 'Druck Wide Bold';
+  background-color: green;
+  color: white;
+  font-weight: 600;
+  font-size: 21px;
+  padding: 24px;
+  border: 1px solid;
+  /* z-index: 20; */
+  border-radius: 4px;
+  margin: 40px 0px;
+}
+.volunteer .allbox{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 148px;
+  height: 400px;
+  gap:20px;
+  padding-left: 30px;
+}
+.volunteer .box1{
+    width: 250px;
+   
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+
+
+.volunteer .icon > div{
+  font-size: 50px;
+  margin-left: 10px;
+  font-weight: lighter;
+}
+.volunteer .text
+{
+      margin-top: 10px;
+      font-family: 'Hackensack';
+      text-align: center;
+}
+.volunteer  .text > div{
+  position: absolute;
+   font-size: 40px;
+   top: 0;
+   text-align: center;
+   
+}
+#tm{
+  font-size: 20px;
+    margin-top: 10px;
+    position: absolute;
+    top: 45px;
+}
+
+
+.last{
+  width:100%;
+  height:370px;
+  /* margin-top:100px; */
+  display:flex;
+  flex-direction: raw;
+  
+}
+.last1{
+  width:30vw;
+  height:370px;
+  background-color: #4D744E;
+
+}
+.last2{
+  width:70vw;
+  height:370px;
+  /* background-color:#9DC88D; */
+  background-color: #D0F0C0;
+ 
+}
