@@ -190,6 +190,49 @@ document.addEventListener("DOMContentLoaded", function() {
   });
   
   
+  //new script
+  async function createle(a1) {
+    let a = document.createElement('div');
+    a.className = a1;
+    return a;
+  }
+  async function createp(a, b) {
+    let c = document.createElement('p');
+    c.className = a;
+    c.innerText = b;
+    return c;
+  }
+  async function createbtn(a, b) {
+    let c = document.createElement('button')
+    c.className = a;
+    c.innerText = b;
+    return c;
+  }
+  document.addEventListener("DOMContentLoaded", function() {
+  (async function main() {
+    let a = await createle('.volunteer');
+    let b = await createle('.u1');
+    let c = await createle('.allbox');
+    let p1 = await createp('oranage', "Want to Join with us");
+    b.appendChild(p1);
+    let p2 = await createp('big', "Become a Volunteer");
+    b.appendChild(p2);
+    let p3 = await createp('null', "Join us in making a difference in children's lives by becoming a volunteer. Your time and efforts can help brighten the future of young minds and create lasting positive impact");
+    b.appendChild(p3);
+    let btn = await createbtn('orbtn', "Join with Us");
+    b.appendChild(btn);
+  })
+  main()
+  (async function main1(){
+        let allbox = await createle('allbox');
+        let box1 = await createle('box1');
+        let icon = await createle('icon');
+    
+  })  
+  main1()
+  });
+  
+  
   
   
   
